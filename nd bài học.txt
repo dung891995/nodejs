@@ -1,0 +1,67 @@
+++number : tăng giá trị của biến ngay lúc đấy lên 1 đơn vị.
+
+number++:  tăng giá trị của biến  lên 1 đơn vị khi mà chúng ta gọi
+biến lần sau.
+
+(++number,number++,--number,number--) thì -- giống cách hoạt động của ++
+nhưng -- sẽ giảm đi 1 đơn vị.
+
+// khai báo function:
+ cách 1
+function demo(){//code}
+
+cách 2: 
+var test= function(){}
+- cách thức gọi và thực hiện function, truyền biến có tên và function không tên là giống nhau
+- điểm khác nhau giữa function có tên và function không tên: phạm vi gọi và thực hiện function
+- truyền biến vào 1 function
+
+--- map, filter: xử lí mảng, đều trả về giá trị là 1 mảng mới ---
++) map : thay đổi giá trị của mảng cũ thành 1 mảng mới
++) filter: lọc giá trị của mảng cũ thành 1 mảng mới
+
+-- object--
+Trường hợp 1: 
+    var obj = {
+        name: "Hà Nội"
+    }
+    var obj2 ={
+        name: "Hà Nội"
+    }
+    +) Khi so sánh (obj == obj2) hoặc (obj === obj2) thì đều trả về giá trị false. VÌ SAO?
+    -> vì 2 object nhìn hình dáng bên ngoài tùy giống nhau nhưng 2 object ở 2 biến khác nhau
+    => 2 object có địa chỉ ô nhớ khác nhau
+    => 2 object khác nhau
+
+    +) khi thay đổi obj.name = "Quảng Ninh"
+    => chỉ obj thay đổi còn obj1 không bị ảnh hưởng gì cả vì 2 object nó khác nhau
+
+Trường hợp 2: 
+    var obj = {
+        name: "Hà Nội"
+    }
+    var obj1= obj
+    +) Khi so sánh (obj == obj2) hoặc (obj === obj2) thì đều trả về giá trị true. VÌ SAO?
+    -> vì 2 object nhìn hình dáng bên ngoài tùy giống nhau 
+            và 2 object có địa chỉ ô nhớ giống nhau
+    => 2 object giống nhau
+
+    +) khi thay đổi obj.name = "Quảng Ninh"
+    => obj thay đổi và obj1  bị ảnh hưởng theo do 2 object trỏ đến cùng 1 biến
+
++) Object.assign(): Sao chép giá trị của 1 object
+ -) Trường hợp 1
+    var obj = {
+        name: "Hà Nội"
+    }
+    var person = Object.assign({},obj)
+    *)person sẽ sao chép toàn bộ thuộc tính của obj và tạo 1 object mới
+    *) khi so sánh person== obj => 2 object khác nhau nhé
+
+    -) Trường hợp 2: chú ý Object.assign bên trong không có {}
+      var obj = {
+        name: "Hà Nội"
+        }
+        var person = Object.assign(obj)
+        *)person sẽ sao chép toàn bộ thuộc tính của obj và tạo 1 object mới
+        *) khi so sánh person== obj => 2 object bằng nhau nhé
