@@ -1,0 +1,13 @@
+Bài 1: tạo promise 1 trả về kết quả resolve là 20
+- promise 2 lấy kết của của promise 1 và chia số đó cho 5
+- promise lấy kết quả của promise 2 và kiểm tra xem số đó có chia hết cho 4 hay không?
+
+Bài 2: tạo 1 promise1 với tác vụ resovle sau 3 giây (dùng settimeout)
+	tạo 1 promise2 tác vụ resolve sau 2 giây
+	tạo 1 promise3 tác vụ reject sau 2 giây
+dùng Promise.all  để thực hiện song song tác vụ tiết kiệm time.
+
+Bài 3: promise1 xử lý tác vụ 3s  cho ra kết quả là 2
+	promise2 xử lý tác vụ 3s và CẦN data của tác vụ 1 trả ra kết quả giá trị x3 kết quả tác vụ 1 (=6)
+	promis3 CẦN data của tác vụ 2 để xác định kết quả tác vụ 2 có > 10 hay không
+	in ra màn hình true hoặc false.

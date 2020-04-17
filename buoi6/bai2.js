@@ -26,11 +26,11 @@ for (let i = 0; i < array.length; i++) {
 }
 // Cộng tổng các số chia hết cho 5 của mảng
 var tong = 0;
-for (let i = 0; i < array.length; i++) {
-    if (array[i] % 5 == 0) {
-        tong += array[i]
-    }
-}
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 5 == 0) {
+//         tong += array[i]
+//     }
+// }
 // console.log(tong);
 
 //Tìm ra tích 3 số đầu của mảng array (dùng 2 cách : if...else và for)
@@ -67,12 +67,35 @@ var tich = 1;
 // }
 // Lưu ý: các giá trị của dấu … là lấy value của firstName và lastName
 
-var obj = {
-    firstName: 'Đỗ',
-    lastName: 'Hao',
+// var obj = {
+//     firstName: 'Đỗ',
+//     lastName: 'Hao',
     
-}
-var obj1 ={
-    name:'Họ của tôi là ' +obj.firstName + ' còn tên của là ' +obj.lastName
-}
-console.log(obj1);
+// }
+// var obj1 ={
+//     name:'Họ của tôi là ' +obj.firstName + ' còn tên của là ' +obj.lastName
+// }
+// console.log(obj1);
+
+//Tìm phần tử = 8 đầu tiên của mảng;
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] == 8) { 
+//         console.log('vị trí của phần tử = 8 đầu tiên là ' + i)
+//         break
+//     }
+    
+// }
+//* Tính tích cách số khác số 8 trong mảng
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] == 8) {
+//        tich *= array[i] 
+//     }
+    
+// }
+// console.log(tich);
+//Tính tổng 3 phần tử cuối của mảng
+// for (let i = array.length -1; i > array.length-4; i--) {
+//     tong += array[i];
+    
+// }
+// console.log(tong);

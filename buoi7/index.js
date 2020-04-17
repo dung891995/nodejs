@@ -13,5 +13,10 @@
     
 var order = [3,5,6,12];
 var oderMap = order.map(function (value) {
-    return order.map
+    return value
 })
+// console.log(oderMap);
+var orderFilter = order.filter(function(value){
+    return value %3 ==0
+})
+console.log(orderFilter);

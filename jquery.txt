@@ -1,0 +1,13 @@
+- html: thay đổi nội dung của dom
+- css : thay đổi css của dom, lưu ý khi 
+- thuộc tính css có 2 chữ trở lên thì phải bỏ đi dấu gạch ngang và viết hoa chữ thứ 2
+- show(): hiển thị 1 dom bị ẩn, nếu có time trong hàm show() dưới dạng đối số thì dom thực hiện hàm show sẽ được hiện ra trong khoảng thời gian đó
+- hide(): ẩn đi 1 dom bị ẩn, nếu có time trong hàm hide() dưới dạng đối số thì dom thực hiện hàm hide sẽ được hiện ra trong khoảng thời gian đó
+- toggle(): thì giống công tắc điện, bật 1 lần là thực hiện show, bật 1 lần nữa thì thực hiện hàm hide (tùy vào trường hợp ban đầu của dom là hide hay show )
+- addClass(): thêm 1 class vào dom
+- removeClass(): xóa 1 class khỏi dom
+- toggleClass(): lần 1 xóa class, lần 2 thì add lại class vừa xóa
+- Event: click,dblclick,focus,blur,change
+- append(): thêm 1 phần tử vào cuối dom chứa dùng hàm append trong trang html
+- prepend(): thêm 1 phần tử vào đầu dom chứa dùng hàm prepend trong trang html
+- remove(): xóa bỏ dom khỏi trang html
